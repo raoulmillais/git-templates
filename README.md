@@ -3,9 +3,22 @@ My Git Templates
 
 These will only work on unix as the hook scripts are bash.
 
-Set your templatedir to ensure all new repos get these hooks:
+Requirements
+------------
 
-    git config --global init.tempatedir "`pwd`"
+* git 1.7.1 or newer
+* bash
 
-N.B. This requires git 1.7.1 or newer
+Setting up a default template
+-----------------------------
 
+cd into the template you want and set your templatedir to ensure all new repos
+get these hooks:
+
+    git config --global init.templatedir "`pwd`"
+
+
+Choosing a specific template
+----------------------------
+
+    git init --template=<path>
